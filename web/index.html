@@ -1,0 +1,24 @@
+<html hang="en" ng-app="colmenaApp">
+  <head>
+    <title>Colmena ui</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row navbar-header">
+        <h3 style="">home</h3>   
+        <div style="">
+          <a ng-href="/settings">Settings</a>
+          <a ng-href="/logout">Log out</a>
+        </div>
+      </div>
+    </div>
+    <div ng-view> </div>
+    </div>
+  </body>
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-route/angular-route.js"></script>
+  <script src="app/home/homeController.js"></script>
+  <script src="app/common/ApiService.js"></script>
+  <script src="app/app.js"></script>
+</html>
