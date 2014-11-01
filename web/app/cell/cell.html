@@ -1,6 +1,8 @@
 <div class="cell">
   this is the cell {{cellId}}
-
-
+  <ul ng-repeat="container in cell.containers" class="cell-block">
+    {{ container.name }} 
+    <a ng-href='/#/cell/{{cellId}}/start/{{$index}}'>start</a> | <a ng-href='/#/cell/{{cellId}}/stop'>stop</a> {{ container.status }}
+  </ul>
   
 </div>
